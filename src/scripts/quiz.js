@@ -6,7 +6,7 @@ $(document).ready(function() {
 	var $questions = $('.questions');
 	var $options = $('.options');
 	//counts the number of questions. If there's 5 then it will say that there's 5 questions. Etc etc
-	var totalQuestions = $('.questions').size();
+	var totalQuestions = $('.questions').length;
 
 	//hide all questions.
     $questions.hide();
