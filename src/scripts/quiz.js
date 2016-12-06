@@ -16,7 +16,6 @@ $(document).ready(function() {
     //The first question is given the value of 0. the second question is given value of 1. and so and so forth. essentially places the questions into an
     //array of sorts. 
     $($questions.get(currentQuestion)).fadeIn();
-    sessionStorage.getItem('question');
 
 	answers = new Object();
 
