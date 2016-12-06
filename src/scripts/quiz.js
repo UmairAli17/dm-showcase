@@ -25,7 +25,7 @@ $(document).ready(function() {
 	    var question = ($(this).attr('name'))
 	    var proc_val = ($(this).data('proc-val'))
 
-        answers[question] = proc_val
+        
         $($questions.get(currentQuestion)).fadeOut(function () {
         	//then hide the currentQuestion and add one. So if it's question One then +1 so you get question two
         	currentQuestion = currentQuestion + 1;
