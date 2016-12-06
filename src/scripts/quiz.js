@@ -17,41 +17,43 @@ $(document).ready(function() {
     //array of sorts. 
     $($questions.get(currentQuestion)).fadeIn();
 
-	answers = new Object();
 
 	$options.click(function(){
-	    var answer = ($(this).attr('value'))
+        answers = new Object();
+
 	    var question = ($(this).attr('name'))
 	    var proc_val = ($(this).data('proc-val'))
+        var ips_val = ($(this).data('ips-val'))
 
-        
+        //make an object out of that question and assign it the data-attribute value of proc_val
+        answers[question.pps] = proc_val
+        //this will create a key "ips" for the json to send to local storage. the key takes the data from the ips=val dataattribute in the answer question buttons
+        answers[question.ips] = ips_val
         $($questions.get(currentQuestion)).fadeOut(function () {
         	//then hide the currentQuestion and add one. So if it's question One then +1 so you get question two
         	currentQuestion = currentQuestion + 1;
             if(currentQuestion == totalQuestions){
-                var result = sum_values()
             	console.log("You've reached the end of the quiz!");
             }
             //else if($($questions.get(currentQuestion)).fadeIn()){
-            else if($($questions.get(currentQuestion)).fadeIn() && sessionStorage.getItem('question')){
+            else if($($questions.get(currentQuestion)).fadeIn() && sessionStorage.getItem('pps') && sessionStorage.getItem('ips')){
                 //parse values to jSON
-                quest = JSON.parse(sessionStorage.getItem('question'));
+                pps = JSON.parse(sessionStorage.getItem('pps'));
+                ips = JSON.parse(sessionStorage.getItem('ips'));
             }else{
-                quest=[];
+                pps=[];
+                ips=[];
             }
             //Send the value proc_val values to the jSOn array.
-            quest.push(proc_val)
-            sessionStorage.setItem('question', JSON.stringify(quest));
-            console.log(proc_val);
+            pps.push(proc_val)
+            ips.push(ips_val)
+            sessionStorage.setItem('pps', JSON.stringify(pps));
+            sessionStorage.setItem('ips', JSON.stringify(ips));
 	   })
     });
 
     function sum_values(){
-    var the_sum = 0;
-        $.each(quest, function () {
-             the_sum += this.proc_val
-        });
-        console.log(the_sum);
+    
     }
 
 
