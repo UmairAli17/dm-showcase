@@ -1,0 +1,52 @@
+body {
+  background: #2597b9; }
+
+.logo {
+  max-width: 150px; }
+
+.quiz-title {
+  text-align: center;
+  margin-top: 4.5em;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .05em;
+  font-size: 3em;
+  color: #f7f7f7; }
+
+.questions {
+  text-align: center; }
+
+.question-text {
+  font-size: 1.75em; }
+
+.options {
+  border-radius: 0;
+  text-transform: uppercase;
+  border: none;
+  color: #f7f7f7;
+  background: none;
+  background: #1f7e99; }
+
+.quiz-start-text {
+  color: #f7f7f7;
+  padding: 5em; }
+
+.yes {
+  background: #468d61; }
+
+.no {
+  background: #7f0000; }
+
+.svg-quest {
+  margin: 0 auto;
+  max-width: 20%; }
+
+.initSvg {
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+  animation: dash 3s linear alternate infinite; }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 150; }
+  to {
+    stroke-dashoffset: 5000; } }

@@ -16,6 +16,9 @@
          <link rel="stylesheet" type="text/css" href="styles/styles.css">
          <link rel="stylesheet" type="text/css" href="styles/css.css">
     	<!--endbuild-->
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -24,25 +27,112 @@
 
         <!-- Add your site or application content here -->
         <div class="container-fluid">
+            <div class="col-xs-12"><img class="logo" src="images/.png"></div>
             <div class="row">
-            	<div class="col-md-8 col-md-offset-2">
-            		<h1>Testing the Quiz - Version One!!</h1>
+            	<div class="col-md-10 col-md-offset-1">
+
+            		<h1 class="col-xs-8 col-xs-offset-2 quiz-title">Just Where are You on The Procrastination Scale?</h1>
                     <!--Question One-->
                     <div class="row">
                         <div class="questions">
-                            <label for="q1">Would You Like to Begin?</label>
-                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="0" data-ips-val="0" role="button">Yes</a>
-                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="0" data-ips-val="0" role="button">No</a>
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <p class="quiz-start-text">Lorem ipsum Minim elit voluptate nisi voluptate Excepteur ut nisi est in. Lorem ipsum In et quis in cupidatat dolor adipisicing. Lorem ipsum Elit eiusmod adipisicing in voluptate minim anim eiusmod dolor mollit anim reprehenderit Ut. Lorem ipsum Culpa anim non et pariatur exercitation.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <a href="#" class="btn col-xs-4 col-xs-offset-4 btn-lg btn-default options yes" name="question" data-proc-val="1" data-ips-val="1" role="button">Let's Begin!</a>
+                            </div>
                         </div>
                         <div class="questions">
-                            <label for="q2">What is your first thought when you receive a new assignment?</label>
-                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="5" data-ips-val="3" role="button">Oh dear.. oh dear oh dear</a>
-                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="3" data-ips-val="5" role="button">Good Answer</a>
+                            <div class="svg-quest">
+                                <svg version="1.1" id="drawSvg" viewBox="0 0 900 1100" enable-background="new 0 0 900 1100" xml:space="preserve">
+                                <g>
+                                    
+                                        <rect x="141.5" y="113.499" transform="matrix(0.9962 -0.0872 0.0872 0.9962 -43.8118 42.1956)" fill="none" stroke="#F7F7F7" stroke-width="10" stroke-miterlimit="10" width="638.999" height="818"/>
+                                </g>
+                                <g>
+                                    <path fill="none" stroke="#F7F7F7" stroke-width="10" stroke-miterlimit="10" d="M158.241,262.137
+                                        c28.048-2.7,29.772,15.217,57.82,12.518c28.048-2.7,26.323-20.617,54.372-23.317c28.047-2.7,29.772,15.217,57.819,12.518
+                                        c28.049-2.7,26.324-20.617,54.373-23.316c28.047-2.7,29.772,15.217,57.819,12.518s26.322-20.617,54.37-23.316
+                                        c28.049-2.7,29.773,15.217,57.822,12.517c28.048-2.7,26.323-20.617,54.37-23.316c28.052-2.7,29.776,15.217,57.828,12.517
+                                        s26.327-20.617,54.379-23.317"/>
+                                </g>
+                                <g>
+                                    <path fill="none" stroke="#F7F7F7" stroke-width="10" stroke-miterlimit="10" d="M168.241,371.137
+                                        c28.048-2.7,29.772,15.217,57.82,12.518c28.048-2.7,26.323-20.617,54.372-23.317c28.047-2.7,29.772,15.217,57.819,12.518
+                                        c28.049-2.7,26.324-20.617,54.373-23.316c28.047-2.7,29.772,15.217,57.819,12.518s26.322-20.617,54.37-23.316
+                                        c28.049-2.7,29.773,15.217,57.822,12.517c28.048-2.7,26.323-20.617,54.371-23.316c28.052-2.7,29.776,15.217,57.827,12.517
+                                        c28.052-2.7,26.327-20.617,54.379-23.317"/>
+                                </g>
+                                <g>
+                                    <path fill="none" stroke="#F7F7F7" stroke-width="10" stroke-miterlimit="10" d="M179.241,486.137
+                                        c28.048-2.7,29.772,15.217,57.82,12.518c28.048-2.7,26.323-20.617,54.372-23.317c28.047-2.7,29.772,15.217,57.819,12.518
+                                        c28.049-2.7,26.324-20.617,54.373-23.316c28.047-2.7,29.772,15.217,57.819,12.518s26.322-20.617,54.37-23.316
+                                        c28.049-2.7,29.773,15.217,57.822,12.517c28.048-2.7,26.323-20.617,54.37-23.316c28.052-2.7,29.776,15.217,57.828,12.517
+                                        s26.327-20.617,54.379-23.317"/>
+                                </g>
+                                <g>
+                                    <path fill="none" stroke="#F7F7F7" stroke-width="10" stroke-miterlimit="10" d="M179.241,610.137
+                                        c28.048-2.699,29.772,15.218,57.82,12.519c28.048-2.7,26.324-20.617,54.372-23.317c28.047-2.699,29.772,15.218,57.819,12.519
+                                        c28.049-2.7,26.324-20.618,54.373-23.318c28.047-2.699,29.772,15.218,57.819,12.519c28.047-2.7,26.322-20.617,54.37-23.317
+                                        c28.049-2.699,29.773,15.218,57.822,12.519c28.048-2.7,26.323-20.617,54.37-23.317c28.052-2.7,29.776,15.218,57.828,12.518
+                                        s26.327-20.618,54.379-23.318"/>
+                                </g>
+                                <g>
+                                    <path fill="none" stroke="#F7F7F7" stroke-width="10" stroke-miterlimit="10" d="M196.241,721.137
+                                        c28.048-2.699,29.772,15.218,57.82,12.519c28.048-2.7,26.324-20.617,54.372-23.317c28.047-2.699,29.772,15.218,57.819,12.519
+                                        c28.049-2.7,26.324-20.618,54.373-23.318c28.047-2.699,29.772,15.218,57.819,12.519c28.047-2.7,26.322-20.617,54.37-23.317
+                                        c28.049-2.699,29.773,15.218,57.822,12.519c28.048-2.7,26.323-20.617,54.37-23.317c28.052-2.7,29.776,15.218,57.828,12.518
+                                        s26.327-20.618,54.379-23.318"/>
+                                </g>
+                                <g>
+                                    <path fill="none" stroke="#F7F7F7" stroke-width="10" stroke-miterlimit="10" d="M224.241,833.137
+                                        c28.048-2.699,29.772,15.218,57.82,12.519c28.048-2.7,26.323-20.617,54.372-23.317c28.047-2.699,29.772,15.217,57.819,12.518
+                                        c28.049-2.7,26.324-20.617,54.373-23.317c28.047-2.699,29.772,15.218,57.819,12.519c28.047-2.7,26.322-20.617,54.37-23.317
+                                        c28.049-2.699,29.773,15.218,57.822,12.519c28.048-2.7,26.323-20.617,54.371-23.317c28.052-2.7,29.776,15.218,57.827,12.518
+                                        c28.052-2.7,26.327-20.618,54.379-23.318"/>
+                                </g>
+                                </svg>
+
+                            </div>
+                            <p class="question-text">I've got a ton of work to finish...</p>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="5" data-ips-val="3" role="button">But I want to play a game with my friends.</a>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="3" data-ips-val="5" role="button">and I'm not sure I have the skills to do it now. Maybe later?</a>
                         </div>
                         <div class="questions">
-                            <label for="q3">What is your Second thought?</label>
-                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="5" data-ips-val="0" role="button">Oh dear.. oh dear oh dear</a>
-                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="3" data-ips-val="0" role="button">Good Answer</a>
+                            <label for="q3">You have to add margins to a word document to send it off for Printing and Binding, what do you do?</label>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="5" data-ips-val="0" role="button">Ahh, it'll be rete! I can do it later!</a>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="0" data-ips-val="0" role="button">It's a small job. Best get it out the way!</a>
+                        </div>
+                        <div class="questions">
+                            <label for="q4">You have a deadline, two months tomorrow. When're you starting?</label>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="0" data-ips-val="5" role="button">I don't know. I don't even know if I can do it.</a>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="0" data-ips-val="0" role="button">Now. Like.. right now!</a>
+                        </div>
+                        <div class="questions">
+                            <label for="q5">I am very efficient in being able to distract myself</label>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="1" data-ips-val="4" role="button">Agreed.</a>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="2" data-ips-val="2" role="button">I Disagree.</a>
+                        </div>
+                        <div class="questions">
+                            <label for="q6">I like getting larger work done before I do the smaller stuff</label>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="3" data-ips-val="-1" role="button">I rather work on smaller projects first. They're usually easiest to get higher marks on.</a>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="1" data-ips-val="1" role="button">Agreed. I compensate for the work done in smaller projects with larger assignments.</a>
+                        </div>
+                        <div class="questions">
+                            <label for="q7">I seem to always stop and start my work</label>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="3" data-ips-val="5" role="button">I never feel as if it's the right.. time(?) to start it</a>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="0" data-ips-val="0" role="button">I attempt to get it all over and done with in one go.</a>
+                        </div>
+                        <div class="questions">
+                            <label for="q8">Sometimes I find that I spend more time chasing fun than work..</label>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="1" data-ips-val="4" role="button">Agreed</a>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="1" data-ips-val="1" role="button">I rather get work done to be honest. Less hassle.</a>
+                        </div>
+                        <div class="questions">
+                            <label for="q9">I do things last minute</label>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="4" data-ips-val="4" role="button">I work better when I'm stressed..</a>
+                            <a href="#" class="btn btn-lg btn-default options" name="question" data-proc-val="0" data-ips-val="0" role="button">Heavens no!</a>
                         </div>
                     </div>
             	</div>
@@ -55,6 +145,7 @@
 
         <!--build:js scripts/main.min.js-->
             <script src="scripts/quiz.js"></script>
+            <script src="scripts/svg.js"></script>
         <!--endbuild-->
     </body>
 </html>

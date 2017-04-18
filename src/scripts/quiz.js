@@ -10,6 +10,8 @@ $(document).ready(function() {
 
 	//hide all questions.
     $questions.hide();
+    
+    window.localStorage.clear();
 
     //fades in the current question. Essentially the onme that appears first.
 
@@ -29,17 +31,23 @@ $(document).ready(function() {
         answers[question.pps] = proc_val
         //this will create a key "ips" for the json to send to local storage. the key takes the data from the ips=val dataattribute in the answer question buttons
         answers[question.ips] = ips_val
+        
+        
+        
         $($questions.get(currentQuestion)).fadeOut(function () {
         	//then hide the currentQuestion and add one. So if it's question One then +1 so you get question two
         	currentQuestion = currentQuestion + 1;
             if(currentQuestion == totalQuestions){
             	console.log("You've reached the end of the quiz!");
+                sum_values();
+                
+               
             }
             //else if($($questions.get(currentQuestion)).fadeIn()){
-            else if($($questions.get(currentQuestion)).fadeIn() && sessionStorage.getItem('pps') && sessionStorage.getItem('ips')){
+            else if($($questions.get(currentQuestion)).fadeIn() && localStorage.getItem('pps') && localStorage.getItem('ips')){
                 //parse values to jSON
-                pps = JSON.parse(sessionStorage.getItem('pps'));
-                ips = JSON.parse(sessionStorage.getItem('ips'));
+                pps = JSON.parse(localStorage.getItem('pps'));
+                ips = JSON.parse(localStorage.getItem('ips'));
             }else{
                 pps=[];
                 ips=[];
@@ -47,14 +55,40 @@ $(document).ready(function() {
             //Send the value proc_val values to the jSOn array.
             pps.push(proc_val)
             ips.push(ips_val)
-            sessionStorage.setItem('pps', JSON.stringify(pps));
-            sessionStorage.setItem('ips', JSON.stringify(ips));
+            localStorage.setItem('pps', JSON.stringify(pps));
+            localStorage.setItem('ips', JSON.stringify(ips));
 	   })
     });
-
-    function sum_values(){
     
+    
+
+    var sum_values = function()
+    {
+        var total_sum = 0;
+        var pps_sum = 0;
+        var ips_sum = 0;
+        var pps = $.parseJSON(localStorage.getItem('pps'));
+        var ips = $.parseJSON(localStorage.getItem('ips'));
+
+        var mergedTotals = pps.concat(ips);
+        
+        var totalSum = $.each(mergedTotals, function (i, value) {
+            total_sum += value;
+        });
+        
+        var ppsSum = $.each(pps, function(i, value){
+            pps_sum += value;
+        });
+        
+        var ipsSum = $.each(pps, function(i, value){
+            ips_sum += value;
+        });
+        
+        console.log(total_sum);        
     }
+    
+    
+
 
 
     
