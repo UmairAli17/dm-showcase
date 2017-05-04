@@ -80,11 +80,22 @@ $(document).ready(function() {
             pps_sum += value;
         });
         
-        var ipsSum = $.each(pps, function(i, value){
+        var ipsSum = $.each(ips, function(i, value){
             ips_sum += value;
         });
         
-        console.log(total_sum);        
+        
+        if(pps_sum >= ips_sum)
+        {
+            console.log("You're a Pure Procatinator");
+        }
+        else{
+            console.log("You're an Irrational Procastinator");
+        }
+        
+        console.log("Total is" + total_sum);
+        console.log("PPS is" + pps_sum);
+        console.log("IPS is" + ips_sum);
     }
     
     
