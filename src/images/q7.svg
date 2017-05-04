@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="900px"
+	 height="1100px" viewBox="0 0 900 1100" enable-background="new 0 0 900 1100" xml:space="preserve">
+<g id="traffic">
+	<path fill="none" stroke="#FFFFFF" stroke-width="20" stroke-miterlimit="10" d="M587.854,1052H313.33
+		C247.978,1052,195,999.022,195,933.671V150.33C195,84.978,247.978,32,313.33,32h274.524c65.352,0,118.33,52.978,118.33,118.33
+		v783.341C706.184,999.022,653.205,1052,587.854,1052z"/>
+</g>
+<g id="lights">
+	<circle id="lightBlink_2_" fill="#FF2E2E" cx="451" cy="239" r="103"/>
+	<circle id="lightBlink_1_" fill="#FFE05C" cx="452" cy="555" r="103"/>
+	<circle id="lightBlink" fill="#88FF73" cx="450" cy="859" r="103"/>
+</g>
+</svg>

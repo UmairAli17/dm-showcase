@@ -82,12 +82,83 @@ body
 .spinningTiles {
   animation: spinFade 2s linear alternate infinite; }
 
-
+.rotateHand
+{
+	transform-origin: bottom left;
+    -moz-transform-origin: 5.5px 0.5px;
+	animation: timeHands 10s linear infinite;
+}
 
 .pivot{
     animation-duration: 1s;
     animation-name: pivot_scale;
     animation-iteration-count: infinite;
+}
+.lightBlink
+{
+	opacity:0;
+}
+.fadeInLights
+{
+	webkit-transition: all .5 ease-in-out;
+        -moz-transition: all .5 ease-in-out;
+        -o-transition: all .5 ease-in-out;
+        transition: all .5s ease-in-out;
+	animation: fadeInTraffic 2s linear infinite;
+}
+
+
+.pressureGauge
+{
+	webkit-transition: all 1.5s sease-in-out;
+    -moz-transition: all 1.5s sease-in-out;
+     -o-transition: all 1.5s sease-in-out;
+     transition: all 1.5s  ease-in-out;
+	animation: gauge  1.5s  linear infinite;
+}
+
+@keyframes gauge{
+	0%
+	{
+		-ms-transform: rotate(-150deg);
+        -webkit-transform: rotate(-150deg);
+        transform: rotate(-150deg);
+        -webkit-transform-origin: 430px 510px;
+	}
+
+	0%
+	{
+		-ms-transform: rotate(25deg);
+        -webkit-transform: rotate(25deg);
+        transform: rotate(25deg);
+        -webkit-transform-origin: 430px 510px;
+	}
+
+	50%
+	{
+		-ms-transform: rotate(50deg);
+        -webkit-transform: rotate(50deg);
+        transform: rotate(50deg);
+        -webkit-transform-origin: 430px 510px;
+	}
+
+
+
+	75%
+	{
+		-ms-transform: rotate(75deg);
+        -webkit-transform: rotate(75deg);
+        transform: rotate(75deg);
+        -webkit-transform-origin: 430px 510px;
+	}
+
+	100%
+	{
+		-ms-transform: rotate(87.5deg);
+        -webkit-transform: rotate(87.5deg);
+        transform: rotate(87.5deg);
+        -webkit-transform-origin: 430px 510px;
+	}
 }
 
 @keyframes pivot_scale{
@@ -160,6 +231,8 @@ body
 keyframes DrawLine to {
   stroke-dashOffset: 0; }
 
+
+
 @-webkit-keyframes spinFade {
   0% {
     transform: rotate(-180deg);
@@ -170,3 +243,34 @@ keyframes DrawLine to {
   100% {
     transform: rotate(360deg);
     transform-origin: 490px; } }
+
+@keyframes spinFade {
+  0% {
+    transform: rotate(-180deg);
+    transform-origin: 490px; }
+  50% {
+    transform: rotate(180deg);
+    transform-origin: 490px; }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 490px; } }
+
+
+
+@-webkit-keyframes timeHands {
+    100%   {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes timeHands {
+    100%   {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes timeHands {
+    100%   {-o-transform: rotate(359deg);}
+}
+@keyframes timeHands {
+    100%   {transform: rotate(359deg);}
+}
+
+@keyframes fadeInTraffic{
+	from {opacity:0;}
+	to{opacity:1;}
+}
