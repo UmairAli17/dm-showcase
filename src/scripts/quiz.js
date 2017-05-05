@@ -10,8 +10,13 @@ $(document).ready(function() {
 
 	//hide all questions.
     $questions.hide();
-    
+    $(".end").hide();
     window.localStorage.clear();
+
+    $(".end").click(function() {
+        window.localStorage.clear();
+        window.location.reload();
+    });
 
     //fades in the current question. Essentially the onme that appears first.
 
@@ -84,18 +89,15 @@ $(document).ready(function() {
             ips_sum += value;
         });
         
-        
         if(pps_sum >= ips_sum)
         {
-            console.log("You're a Pure Procatinator");
+            $(".quiz-end").append(total_sum + '<br> Total Level of Procatination' + '<br><br>' + 'You Are What We Call a "Pure Procastinator')
+            $(".end").show();
         }
         else{
-            console.log("You're an Irrational Procastinator");
+            $(".quiz-end").append(total_sum + '<br> Total Level of Procatination' + '<br><br>' + '</br>' +'You Are an Irrational Procastinator')
+            $(".end").show();
         }
-        
-        console.log("Total is" + total_sum);
-        console.log("PPS is" + pps_sum);
-        console.log("IPS is" + ips_sum);
     }
     
     

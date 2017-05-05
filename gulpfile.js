@@ -41,7 +41,7 @@ return gulp.src('src/images/**/*.+(png|jpg|jpeg|gif|svg)')
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'src'
+      baseDir: 'dist'
     },
   })
 })

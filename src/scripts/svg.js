@@ -1,5 +1,10 @@
 $(document).ready(function() {
     
+    $(".yes").click(function(event) {
+        event.preventDefault();
+        $(".quiz-title").hide();
+    });
+
     //First SVG
 	var svg = $("#drawSvg");
 	svg.addClass('initSvg');
