@@ -6,6 +6,19 @@ body
 	background: #2597b9;
 }
 
+.container--ph {
+  height: 0;
+  padding-top: 48%;
+  position: relative;
+}
+
+.svg--responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 .logo
 {
 	max-width: 150px;
@@ -13,7 +26,6 @@ body
 
 .quiz-title{
 	text-align: center;
-	margin-top: 4.5em;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: .05em;
 	font-size: 3em;
@@ -25,7 +37,7 @@ body
 {
 	text-align: center;
       position: absolute;
-    top: 25em;
+    top: 15em;
         width: 75%;
     margin-left: 12.5%;
 
@@ -33,28 +45,40 @@ body
 
 .question-text
 {
-	font-size: 1.75em;
+  font-size: 1.5em;
+  color: #f7f7f7;
 }
 
 .options
 {
 	border-radius: 0;
 	text-transform: uppercase;
-	border: none;
-	color: $font-colour;
 	background: none;
-	    background: #1f7e99;
+  padding: 1em;
+  border: solid #fff;
+  border-radius: .5em;
+  white-space: normal;
+  color: #f7f7f7
+
 }
 
 .quiz-start-text
 {
 	color: $font-colour;
-	padding: 5em;
+  font-size: 1.25em;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
 .yes
 {
-	background: #468d61;
+  float: left;
+  width: 30%;
+  margin-left:35%;
+	background: none;
+  padding: 2em;
+  border: solid #fff;
+  border-radius: 1em;
 }
 
 .no{

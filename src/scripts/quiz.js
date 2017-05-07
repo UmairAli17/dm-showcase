@@ -91,11 +91,11 @@ $(document).ready(function() {
         
         if(pps_sum >= ips_sum)
         {
-            $(".quiz-end").append(total_sum + '<br> Total Level of Procatination' + '<br><br>' + 'You Are What We Call a "Pure Procastinator')
+            $(".quiz-end").append(total_sum + '<br> Total Level of Procatination' + '<br><br>' + 'You Are What We Call a "Pure Procastinator"')
             $(".end").show();
         }
         else{
-            $(".quiz-end").append(total_sum + '<br> Total Level of Procatination' + '<br><br>' + '</br>' +'You Are an Irrational Procastinator')
+            $(".quiz-end").append(total_sum + '<br> Total Level of Procatination' + '<br><br>' + '</br>' +'You Are an Irrational Procastinator"')
             $(".end").show();
         }
     }
