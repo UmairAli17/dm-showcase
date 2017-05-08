@@ -49,13 +49,14 @@ body {
   margin-bottom: 3em; }
 
 .yes {
-  float: left;
-  width: 30%;
-  margin-left: 35%;
-  background: none;
-  padding: 2em;
-  border: solid #fff;
-  border-radius: 1em; }
+      float: left;
+    width: 30%;
+    margin-left: 35%;
+    background: none;
+    padding: 1.5em;
+    border: solid #fff;
+    border-radius: 1em;
+    font-size: 1.5em; }
 
 .no {
   background: #7f0000; }
@@ -80,7 +81,9 @@ body {
   border: solid;
   padding: 1em;
   text-transform: uppercase;
-  font-size: 1.75em; }
+  font-size: 1.75em;
+  white-space: normal;
+}
 
 .initSvg {
   stroke-dasharray: 5000;
