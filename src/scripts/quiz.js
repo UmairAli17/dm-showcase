@@ -95,7 +95,7 @@ $(document).ready(function() {
             $(".end").show();
         }
         else{
-            $(".quiz-end").append(total_sum + '<br> Total Level of Procatination' + '<br><br>' + '</br>' +'You Are an Irrational Procastinator"')
+            $(".quiz-end").append(total_sum + '<br> Total Level of Procatination' + '<br><br>' + '</br>' +'You Are an "Irrational Procastinator"')
             $(".end").show();
         }
     }
